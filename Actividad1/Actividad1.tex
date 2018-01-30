@@ -1,0 +1,194 @@
+\documentclass{article}
+
+% set font encoding for PDFLaTeX or XeLaTeX
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{ifxetex}
+\usepackage{hyperref}
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\ifxetex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+% used in maketitle
+\title{Reporte de Actividad 1: La Atmósfera Terrestre}
+\author{Jesús Antonio González Espinosa \\  \\ Física Computacional 1}
+\date{30 de Enero del 2018}
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% documentation: http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+\begin{document}
+\maketitle
+
+La primera actividad del curso es realizar una síntesis de un texto, en un documento LaTeX, con el fin de familiarizarnos con él y sus herramientas para poder ir desarrollando habilidad y velocidad para futuros reportes. Asímismo, se está aprendiendo a trabajar con GitHub y con CoCalc, el primero que nos permite depositar códigos en línea y el segundo trabajar con códigos LaTeX en línea. Finalmente, al ser la primera entrega, se nos explicará como entregar las actividades. 
+
+\section{Introduccióna la Atmósfera}
+La atmósfera de la Tierra es la capa de gases que rodea al planeta, retenida por la gravedad terrestre. Ésta protege la vida sobre la Tierra, nos permite tener agua líquida por la presión que causa, absorbe la luz ultravioleta del Sol, calienta la superficie mediante el efecto invernadero, y reduce las temperaturas extremas entre el día y la noche.
+
+La atmósfera está compuesta por varios gases, los dos primeros que conforman la mayor parte es el nitrógeno con 79.09\%, y el oxígeno con 20.95\%, entre otros gases. Su masa de $5.15$ x $10^{18}$ kg, la cual alrededor de un tercio está concentrada en los primeros 11 kilómetros de la superficie, y mediante avanza, se va volviendo más y más delgada. No hay límites definidos a la atmósfera y el espacio exterior, aunque la línea de Kárman se usa como referencia para dividir la atmósfera con el espacio exterior. Las capas de la atmósfera pueden ser catalogadas a partir de varias características basadas en la temperatura y la composición.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\linewidth]{atmosfera1.png}
+  \caption{Imágen CC: PIRO4D (Pixabay).}
+\end{figure}
+
+\section{Composición}
+Los tres principales componentes de la atmósfera son el nitrógeno, el oxígeno y el argón. El agua en forma de vapor ocupa alrededor de 25\% de la masa de la atmósfera, aunque sus porciones dependen de la zona, teniendo una máxima de 5\% del volumen si es una zona húmeda y caliente, con un mínimo de 0.001\% en zonas frías; al hablar de la concentración de los otros gases, se habla en términos de aire seco. Al resto de los gases que lo componen se le conocen como gases de traza, entre los cuales se encuentran los gases de efecto invernadero; asímismo, el aire filtrado incluye trazas de muchos otros químicos.
+
+Ahora mostramos una tabla de los mayores constituyentes del aire seco, por volumen.
+\begin{center}
+    \begin{tabular}{ | l | l |}
+    \hline
+    \textbf{Gas}  & \textbf{Porcentaje}  \\ \hline
+    Nitrógeno & 78.084\% \\ \hline
+    Oxígeno & 20.946\% \\ \hline
+    Argón & 0.9340\% \\ \hline
+    Óxido de Carbono & 0.04\% \\ \hline
+    Neón & 0.001818\% \\ \hline
+    Helio & 0.000524\% \\ \hline
+    Metano & 0.000179\% \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\linewidth]{atmosfera2.png}
+  \caption{Imágen CC: Dbc334, Liftarn (Wikimedia Commons).}
+\end{figure}
+
+
+\section{Estructura de la Atmósfera}
+\subsection{Capas Principales}
+La presión y la densidad decrecen con la altitud de la atmósfera, pero la temperatura se mantiene constante o incrementa con la altitud en ciertas regiones; eso y porque puede ser medible por instrumentos, el comportamiento de la temperatura ha servido como métrica para dividir la atmósfera en 5 capas principales:
+
+\begin{itemize}
+\item  \textbf{Exósfera}: de 700 a 10,000 km
+\item \textbf{Termósfera}: de 80 a 700 km
+\item \textbf{Mesósfera}: de 50 a 80 km
+\item \textbf{Estratósfera}: de 12 a 50 km
+\item \textbf{Tropósfera}: de 0 a 12 km
+\end{itemize}
+\subsubsection{Exósfera}
+La exósfera es la capa externa de la atmósfera, que tiene una altitud de 700 km hasta 10,000 km, donde se une al viento solar. Su composición es principalmente hydrógeno, helio, nitrógeno, oxigeno y dióxido de carbono, las cuales regularmente entran a la magnetósfera o al viento solar, ya que esta capa no se comporta como gas. A veces la aurora borealis y la aurora australis pueden ocurre en la parte baja de la exósfera conectandose con la termósfera. Aquí están situados la mayoría de los satélites que orbitan la Tierra.
+\subsubsection{Termósfera}
+La termósfera es la segunda capa más lejana a la Tierra, con una altitud de 80 km hasta los 700 km. La parte más baja de la termósfera contiene la ionosfera. 
+La temperatura de la termósfera aumenta gradualmente con la altura. En esta capa, la inversión de la temperatura se debe a la baja densidad de moléculas. Puede llegar a obtener valores de 1500 $^\circ$C, pero a pesar de eso, no se siente caliente a causa de la baja densidad. Esta capa no tiene nubes ni agua en forma de vapor. Aquí ocurren fenómenos como la aurora borealis y aurora australis. La Estación Espacial Internacional orbita esta capa entre los 350 y 420 km.
+\subsubsection{Mesósfera}
+La mesósfera es la tercera capa más alta de la atmósfera, que va desde los 50 km hasta los80 km. La temperatura decae con la altitud, siendo el lugar más frío de la Tierra con una temperatura que va alrededor de -85 $^\circ$C. El aire está tan frío que el vapor de agua puede convertirse en nubes noctiluces mesosféricas polares. Ocasionalmente se pueden formar descargas llamadas eventos luminosos transitorio; también en esta capa es donde los meteoros se queman al entrar a la atmósfera. Es principalmente accedida por cohetes sonda y  aeronaves con cohetes. 
+\subsubsection{Estratósfera}
+La estratósfera es la segunda capa más baja. Va desde los 12 km de altura, hasta los 50 km. Contiene la capa de ozono y tiene una presión de 1/1000 de la del nivel del mar. En esta capa, se da un aumento de temperatura mediante aumenta la altitud, que van desde los -60 $^\circ$C, hasta los 0 $^\circ$C, causado por la absorción de rayos UV. Carece de turbulencia y está libre de nubes, aunque ocasionalmente se forman nubes nacaradas en las partes bajas de la capa. Es la capa más alta a la que pueden viajar los aviones con propulción a chorro.
+\subsubsection{Tropósfera}
+Es la capa más baja de la atmósfera, que va desde la superficie terrestre, hasta los 12 km de altura. La temperatura regularmente disminuye mediante sube la altitud por calentamiento a través de la transferencia de energías en la superficie, haciendo que sea la zona más caliente de la tropósfera. Contiene 80\% de la masa de la atmósfera y es la más densa. La humedad y el vapor de agua hacen que el clima suceda en gran parte en esta capa, conteniendo casi todo tipo de nubes asociadas al clima generadas por la circulación del viento. La mayor parte de la aviación sucede en la troósfera y es la única capa accesible por los  aviones propulsados por hélice. 
+\subsection{Otras Capas}
+Aunque existan 5 capas principales determinadas por la temperatura, se pueden distinguir más capas a través de otras propiedades:
+\begin{itemize}
+\item La \textbf{capa de ozono} que está contenida en la estratósfera. 
+\item La \textbf{ionósfera} que es la región de la atmósfera ionizada por la radiación solar, responsable de las auroras. Se ubica en la mesósfera, termósfera y parte de la exósfera.
+\item La \textbf{homósfera y heterósfera} están definidos si los gases están bien mezclados. La homósfera incluye la tropósfera, la estratósfera, la mesósfera y la parte baja de la termósfera; donde los gases están mezclados por turbulencia. La heterósfera incluye la exosfera y gran parte de la termósfera; donde las moléculas pesadas estén en la parte baja y los ligeros en la parte superior.
+\item La \textbf{capa límite planetaria} es la parte de la tropósfera más cercana a la superficie terrestre y que le afecta directamente, por difusión turbulenta. Su altura varía desde los 100 metros hasta los 3 km.
+\end{itemize}
+\section{Propiedades Físicas}
+\subsection{Presión y Espesor}
+La presión atmosférica promedio al nivel del mar es de 101,325 pascales, lo cual equivale a una atmósfera estándar. La masa total de la atmósfera es de $5.1380$ x $10^{18}$ kg. La presión atmósferica puede variar según la ubicación y el clima. La masa atmósferica se distribuye así:
+\begin{itemize}
+\item 50\% está por debajo de los 5.6 km de altura.
+\item 90\% está por debajo de los 16 km.
+\item 99.99\% está por debajo de los 100 km.
+\end{itemize}
+
+\subsection{Temperatura y Velocidad del Sonido}
+La temperatura de la atmósfera decrece con la altitud, iniciando al nivel del mar; pero a partir de los 11 km la temperatura se estabiliza hasta llegar a la estratósfera donde alrededor de a los 20 km aumenta con la altura por la capa de ozono. Otra zona que tiene este mismo fenómeno de aumentar la temperatura con la altura es la termósfera a 90 km. 
+La velocidad del sonido en la atmósfera, al avanzar la altitud, toma la forma del perfil de la temperatura y no refleja cambios altitudinales en la densidad ni en la presión.
+\subsection{Masa y Densidad}
+La densidad del aire al nivel del mar es de $1.2 kg/m^3$ y va decreciendo mientras la altitud aumenta. El promedio de la masa de la atmósfera es de $5$x$10^{15}$ toneladas, de la cual, en promedio, $1.27$ x $10^{16}$ kg es de vapor de agua y $5.1352 \pm 0.0003$ x $10^{18}$ kg de aire seco.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.4\linewidth]{atmosfera3.jpg}
+  \caption{Imágen CC: WikiImages (Pixabay).}
+\end{figure}
+
+\section{Propiedades Ópticas}
+La Tierra recibe radiación solar, que es absorbida por la atmósfera y también emite radiación al espacio, que es la reflexión causada por la atmósfera.
+\subsection{Dispersión}
+Cuando la luz pasa por la atmósfera, los fotones pueden interactúar con ella a partir de la dispersión. Si el caso ha sido así, se le dice radiación indirecta cuando la luz se ha dispersado en la atmósfera. Si no interactúa, se le dice radiacón directa.
+\subsection{Absorción}
+Diferentes moléculas absorben diferentes longitud de ondas. Cuando una molécula absorbe un fotón, incrementa su energía y ésto calienta la atmósfera.
+\subsection{Emisión}
+A causa de la temperatura, la atmósfera emite radiación infrarroja; las nubes son fuertes absorbentes y emisores de éste tipo de radiación. Los efectos invernaderos también tienen que ver, ya que algunos gases de la atmósfera absorben y emiten radiación, pero no interactúan con la luz del sol en el espectro visible.
+\subsection{Índice de Refracción}
+El índice de refracción tiene variaciones que pueden causar la reflexión de los rayos de luz en recorridos ópticos largos. El índice de refracción del aire depende de la temperatura, causando efectos de refracción cuando el gradiente de temperatura es muy grande.
+
+\section{Circulación}
+La circulación atmósferica es el movimiento a gran escala del aire a través de la tropósfera, y el medio que distribuye el calor a través de la Tierra. La estructura varia de año a año, pero de forma general, se mantiene constante.
+
+\bigskip
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\linewidth]{atmosfera4.jpg}
+  \caption{Imágen CC: Simon (Pixabay).}
+\end{figure}
+
+\section{Bibliografía}
+Wikipedia (2018) Atmosphere of Earth. Recuperado el 28 de Enero del 2018 desde 
+\url{https://en.wikipedia.org/wiki/Atmosphere_of_Earth}
+
+\bigskip
+\noindent
+Imágenes: 
+\begin{itemize}
+\item Figure 1:
+
+PIRO4D (24 de Noviembre de 2016) Pixabay. Recuperado el 29 de Enero del 2018 desde \url{https://pixabay.com/es/globo-astronom%C3%ADa-atm%C3%B3sfera-1849404/}
+
+\item Figure 2:
+
+Dbc334, Liftarn (29 de Mayo de 2014) Wikimedia Commons. Recuperado el 29 de Enero del 2018 desde \url{https://commons.wikimedia.org/wiki/File:Composition_of_Earth%27s_atmosphere_es.svg#}
+
+\item Figure 3:
+
+WikiImages (14 de Diciembre de 2011) Pixabay. Recuperado el 29 de Enero del 2018 desde \url{https://pixabay.com/es/tierra-globo-atm%C3%B3sfera-nubes-cielo-11082/}
+
+\item Figure 4:
+
+Simon (7 de Junio de 2016) Pixabay. Recuperado el 29 de Enero del 2018 desde \url{https://pixabay.com/es/cielo-nubes-atm%C3%B3sfera-aire-ox%C3%ADgeno-1441935/}
+
+\end{itemize}
+
+
+\section{Apéndice}
+\begin{itemize}
+\item  ¿Qué fue lo que más te llamó la atención de esta actividad?
+
+El aprender más sobre \LaTeX y poderme desenvolver mejor, ya que había escuchado de él, pero nunca lo había usado. También fue interesante la lectura sobre la que se hizo la síntesis; ya que fue información nueva que no conocía.
+
+\item  ¿Qué fue lo que se te hizo menos interesante?
+
+Hacer síntesis no es de mis actividades favoritas, por lo que se me hizo lo menos interesante, a pesar de que fue una manera de conseguir un primer acercamiento a \LaTeX, el cual es el objetivo principal de la actividad. 
+
+\item  ¿Qué cambios harías para mejorar esta actividad?
+
+Implementar otra lectura que incluya formulas u otros datos que nos obliguen a investigar e indagar más sobre los comandos y herramientas que tiene \LaTeX.
+
+\item  ¿Cuál es tu primera impresión de uso de LATEX?
+
+Ha sido muy interesante, ya que por un lado, brinda mucha facilidad al insertar cosas como formulas o signos; pero por otra parte, no logré acostumbrarme totalmente a lo incomodo que puede ser insertar algunas cosas como las imágenes o las tablas, ya que programas como Word brindan mucha facilidad al hacer ese tipo de cosas.
+
+\item  ¿El tiempo sugerido para esta actividad fue suficiente? 
+
+Si, ya que no fue una actividad complicada, simplemente trato de leer, sintetizar y traducir. Una semana fue suficiente tiempo para entender las herramientas de \LaTeX y desarrollar un buen trabajo. 
+
+\item  ¿Encontraste algún documento o recurso en línea útil que quisieras compartir con los demás?  
+
+Principalmente utilice la las ligas dadas en la actividad, pero hubo una que encontré al buscar más herramientas de \LaTeX. La liga es de wikibooks: https://en.wikibooks.org/wiki/LaTeX
+
+\end{itemize}
+
+\end{document}
